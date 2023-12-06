@@ -66,8 +66,6 @@ for mapp in maps:
 
             # both sides are over the interval - convert into 3
             elif r[0] < interval_s[0] and r[1] > interval_s[1]:
-                _min = interval_d[0]
-                _max = interval_d[1]
                 next_ranges.append(interval_d)
                 ranges.append([r[0], interval_s[0] - 1])
                 ranges.append([interval_s[1] + 1, r[1]])
